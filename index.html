@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Cyberbezpieczeństwo</title>
+        <link rel="stylesheet" href="graphics.css">
+        <script src="https://kit.fontawesome.com/ad930ac9f6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/1111.PNG" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Strona główna</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#services">Usługi</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#projects">Projekty</a></li>                       
+                        <li><a href="#contact">Kontakt</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Junior Cybersecurity </p>
+                    <h1>Cześć, jestem <br><span>Mateusz</span><br></h1>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div id="container">
+                <div id="row">
+                    <div id="about-col-1">
+                        <h1 class="sub-title">O mnie</h1>
+                        <p class="text">
+                            Nazywam się Mateusz i jestem pasjonatem cyberbezpieczeństwa. Zawsze fascynowały mnie wyzwania, jakie stawia ochrona danych w dynamicznie zmieniającym się cyfrowym świecie. Specjalizuję się w testach penetracyjnych, analizie zagrożeń oraz projektowaniu zabezpieczeń, które pomagają organizacjom skutecznie przeciwdziałać zagrożeniom cybernetycznym.
+                        </p>
+                        <p class="text">
+                            Moje doświadczenie obejmuje zarówno projekty indywidualne, jak i współpracę z zespołami w zakresie identyfikacji luk bezpieczeństwa oraz implementacji rozwiązań minimalizujących ryzyko. Przez lata zgłębiałem zaawansowane techniki etycznego hackingu, analizę złośliwego oprogramowania oraz automatyzację procesów bezpieczeństwa przy użyciu języków programowania takich jak Python i Bash.
+                        </p>
+                        <p class="text">
+                            Nieustannie poszerzam swoje umiejętności poprzez naukę i zdobywanie certyfikatów, takich jak CompTIA Security+ i Certified Ethical Hacker (CEH). Uważam, że kluczem do sukcesu w cyberbezpieczeństwie jest ciągłe uczenie się oraz dostosowywanie się do nowych wyzwań technologicznych.
+                        </p>
+                        <p class="text">
+                            W moim portfolio znajdziesz projekty dotyczące m.in. budowy systemów wykrywania złośliwego oprogramowania, tworzenia narzędzi do skanowania podatności oraz zabezpieczania architektury chmurowej. Jestem gotowy na kolejne wyzwania i współpracę z zespołami, które podzielają moją pasję do zapewniania bezpieczeństwa w cyfrowym świecie.
+                        </p>
+                        <p class="text">
+                            Jeśli poszukujesz eksperta ds. cyberbezpieczeństwa, który jest zaangażowany, dociekliwy i skupiony na rozwiązywaniu problemów, zapraszam do kontaktu. Chętnie opowiem więcej o mojej wiedzy, doświadczeniu i pomysłach na poprawę bezpieczeństwa w Twojej organizacji.
+                        </p>
+                        <div id="tab-titles">
+                            <p  class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p>
+                            <p  class="tab-links" onclick="opentab('experience')">Doświadczenie</p>
+                            <p  class="tab-links" onclick="opentab('education')">Edukacja</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Testy penetracyjne:</span> Biegłość w narzędziach takich jak Metasploit, Burp Suite i Wireshark.</li>
+                                <li><span>Analiza zagrożeń:</span> Ekspertyza w analizie złośliwego oprogramowania i ocenie podatności.</li>
+                                <li><span>Programowanie:</span> Python, skrypty Bash oraz znajomość Javy w celu automatyzacji i tworzenia aplikacji.</li>
+                                <li><span>Certyfikaty:</span> CompTIA Security+, Certified Ethical Hacker (CEH).</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Analityk cyberbezpieczeństwa (staż):</span> Przeprowadzałem oceny ryzyka i wdrażałem bezpieczne protokoły.</li>
+                                <li><span>Freelancer (etyczny haker):</span> Skutecznie identyfikowałem podatności dla małych firm.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Licencjat z informatyki:</span> Specjalizacja w cyberbezpieczeństwie, Uniwersytet Rzeszowski.</li>
+                                <li><span>Certyfikaty:</span> CompTIA Security+, CEH, CISSP (w trakcie).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">Moje usługi</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-shield-virus"></i>
+                        <h2>Testy penetracyjne</h2>
+                        <p>
+                            Przeprowadzam symulowane ataki, aby zidentyfikować luki w zabezpieczeniach Twojej infrastruktury IT, zanim zrobią to cyberprzestępcy. 
+                            Wykorzystuję nowoczesne narzędzia, takie jak Metasploit, Burp Suite czy Nmap, aby przeprowadzić dokładną analizę podatności w aplikacjach webowych, systemach operacyjnych i sieciach. 
+                            Każdy raport zawiera szczegółowe rekomendacje dotyczące naprawy wykrytych problemów, co pozwala na skuteczne podniesienie poziomu bezpieczeństwa.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h2>Zabezpieczenia sieci</h2>
+                        <p>
+                            Tworzę i wdrażam kompleksowe rozwiązania sieciowe, które chronią Twoją infrastrukturę przed atakami, takimi jak DDoS, ransomware czy phishing. 
+                            Moja wiedza obejmuje konfigurację zapór ogniowych (firewalls), systemów wykrywania włamań (IDS) oraz segmentację sieci w celu minimalizacji ryzyka. 
+                            Pomagam organizacjom budować bezpieczne środowiska sieciowe dostosowane do ich unikalnych potrzeb.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        <h2>Ocena ryzyka i zgodność</h2>
+                        <p>
+                            Analizuję potencjalne zagrożenia i opracowuję strategie minimalizacji ryzyka, dostosowane do specyfiki Twojej firmy. 
+                            Moje usługi obejmują również audyty zgodności z normami bezpieczeństwa, takimi jak ISO 27001, GDPR czy NIST. 
+                            Dzięki kompleksowym raportom i wskazówkom pomagam firmom osiągnąć pełną zgodność z przepisami, jednocześnie zwiększając ich odporność na ataki cybernetyczne.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/12.jpg" alt="Skaner podatności">
+                        <div class="layer">
+                            <h3>Skaner podatności</h3>
+                            <p>
+                                Stworzyłem narzędzie w Pythonie do automatycznego wykrywania luk w aplikacjach webowych i systemach. 
+                                Projekt obejmował integrację popularnych bibliotek, takich jak `Scapy` i `Requests`, 
+                                a także generowanie raportów zidentyfikowanych podatności w czytelnej formie dla administratorów. 
+                                Narzędzie było wykorzystywane podczas testów penetracyjnych dla klientów biznesowych.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/13.jpg" alt="Audyt sieciowy">
+                        <div class="layer">
+                            <h3>Audyt bezpieczeństwa sieciowego</h3>
+                            <p>
+                                Przeprowadziłem audyt sieci w średniej wielkości firmie, identyfikując zagrożenia i słabe punkty infrastruktury IT. 
+                                Projekt obejmował analizę przepływów sieciowych, konfiguracji routerów oraz firewalli. 
+                                Przygotowany raport wskazywał kluczowe obszary wymagające poprawy, takie jak segmentacja sieci i lepsze praktyki zarządzania hasłami.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/14.jpg" alt="Plan reagowania na incydenty">
+                        <div class="layer">
+                            <h3>Plan reagowania na incydenty</h3>
+                            <p>
+                                Opracowałem kompletną strategię reagowania na incydenty cyberbezpieczeństwa dla startupu technologicznego. 
+                                Plan obejmował procedury identyfikacji i analizy zagrożeń, minimalizacji skutków ataków oraz odzyskiwania danych. 
+                                Przeprowadziłem również szkolenie zespołu IT, symulując różne scenariusze zagrożeń.
+                            </p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projekty</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Zapora aplikacji webowych (WAF)</h2>
+                        <p>
+                            Opracowałem lekką zaporę aplikacyjną (WAF) przeznaczoną dla małych i średnich firm, umożliwiającą ochronę przed popularnymi zagrożeniami aplikacyjnymi, takimi jak SQL Injection, Cross-Site Scripting (XSS) czy Directory Traversal. 
+                            Projekt obejmował:
+                        </p>
+                        <ul>
+                            <li>Tworzenie logiki filtrowania ruchu HTTP w oparciu o regularne wyrażenia.</li>
+                            <li>Implementację modułów raportowania podejrzanych żądań w czasie rzeczywistym.</li>
+                            <li>Testowanie skuteczności na serwerach Apache i Nginx z rzeczywistym ruchem sieciowym.</li>
+                        </ul>
+                        <p>
+                            WAF zapewnił 98% skuteczności w blokowaniu ataków w testach penetracyjnych.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                    <div>
+                        <h2>System wykrywania złośliwego oprogramowania</h2>
+                        <p>
+                            Stworzyłem system klasyfikacji złośliwego oprogramowania wykorzystujący algorytmy uczenia maszynowego, który automatycznie analizuje pliki wykonywalne i identyfikuje potencjalne zagrożenia. Kluczowe elementy projektu:
+                        </p>
+                        <ul>
+                            <li>Użycie algorytmów, takich jak Random Forest i Support Vector Machines (SVM), do analizy atrybutów plików.</li>
+                            <li>Integracja z VirusTotal do zbierania danych treningowych i testowych.</li>
+                            <li>Zapewnienie łatwego w obsłudze interfejsu do analizy wyników i generowania raportów.</li>
+                        </ul>
+                        <p>
+                            Projekt osiągnął 96% dokładności w identyfikacji złośliwego oprogramowania i został wdrożony w środowisku testowym klientów.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                    <div>
+                        <h2>Bezpieczna architektura chmurowa</h2>
+                        <p>
+                            Zaprojektowałem skalowalną i bezpieczną architekturę chmurową dostosowaną do wymagań zgodności z regulacjami takimi jak GDPR i ISO 27001. Projekt obejmował:
+                        </p>
+                        <ul>
+                            <li>Wdrożenie uwierzytelniania wieloskładnikowego (MFA) i szyfrowania danych w spoczynku oraz w tranzycie.</li>
+                            <li>Konfigurację systemów monitorowania w czasie rzeczywistym z wykorzystaniem narzędzi takich jak AWS CloudWatch i ELK Stack.</li>
+                            <li>Tworzenie zasad zarządzania tożsamościami (IAM) w celu minimalizacji ryzyka nieautoryzowanego dostępu.</li>
+                        </ul>
+                        <p>
+                            Architektura została wdrożona dla startupu technologicznego, zapewniając pełne bezpieczeństwo danych klientów i zgodność z przepisami.
+                        </p>
+                        <a href="#">Dowiedz się więcej</a>
+                    </div>
+                </div> 
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                         <h1 class="sub-title">Kontakt</h1>
+                         <p><i class="fa-solid fa-paper-plane"></i>BENCOM@GMAIL.COM</p>
+                         <p><i class="fa-solid fa-phone"></i>945234654</p> 
+                    </div>
+                    <div class="contact-right">
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-discord"></i></a>
+                         </div> 
+                         <a href="#" download class="btn btn2">Pobierz CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mateusz. Dziękuję za odwiedzenie mojej strony<i class="fa-solid fa-heart"></i></p>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
