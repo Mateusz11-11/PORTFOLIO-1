@@ -425,3 +425,10 @@ nav ul .fa-solid{
         font-size: 32px;
     }
 }
+
+@media (max-width: 600px) {
+    .social-icons, .btn.btn2 {
+        margin: 20px auto 0 auto;
+        text-align: center;
+    }
+}
