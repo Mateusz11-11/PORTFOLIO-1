@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(111.jpg);
+    background-image: url(images/111.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -319,7 +319,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(111.jpg);
+        background-image: url(images/111.jpg);
     }
    .header-text{
     margin-top: 100%;
@@ -370,4 +370,58 @@ nav ul .fa-solid{
 .copyright{
     font-size: 14px;
 }
+}
+@media (max-width: 600px) {
+    /* Navigation adjustments */
+    nav ul {
+        right: -200px;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav .fa-bars {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    /* Images and grid layouts */
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+
+    .services-list, .work-list {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    /* Text and header adjustments */
+    .header-text {
+        margin-top: 60%;
+        font-size: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 14px;
+        margin: 10px;
+    }
+
+    /* Buttons and titles */
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .sub-title {
+        font-size: 32px;
+    }
 }
