@@ -372,7 +372,6 @@ nav ul .fa-solid{
 }
 }
 @media (max-width: 600px) {
-    /* Navigation adjustments */
     nav ul {
         right: -200px;
     }
@@ -389,7 +388,6 @@ nav ul .fa-solid{
         font-size: 16px;
     }
 
-    /* Images and grid layouts */
     .work img {
         width: 100%;
         height: auto;
@@ -400,7 +398,6 @@ nav ul .fa-solid{
         grid-gap: 20px;
     }
 
-    /* Text and header adjustments */
     .header-text {
         margin-top: 60%;
         font-size: 14px;
@@ -415,7 +412,6 @@ nav ul .fa-solid{
         margin: 10px;
     }
 
-    /* Buttons and titles */
     .btn {
         padding: 10px 20px;
         font-size: 14px;
